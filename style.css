@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.introducao-bg {
+  background: #000000;
+  padding: 90px 40px;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+
+.titulo-introducao {
+  font-size: 7rem;
+  color: #e2cc00;
+  line-height: 0.9;
+}
+
+hr {
+  border: 2px solid #e2cc00;
+}
+
+.arte {
+  background: #000000;
+}
+
+.section-arte {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.titulo-arte {
+  margin-top: 30px;
+  font-size: 3rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #f6f6f6;
+}
+
+.titulo-foto {
+  margin-bottom: 15px;
+  color: #e2cc00;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.historia {
+  position: relative;
+  padding: 80px 30px;
+}
+
+.historia:before {
+  position: absolute;
+  content: "VAN GOGH'S ART";
+  font-weight: bolder;
+  text-align: center;
+  border-bottom: 5px solid #000;
+  width: 500px;
+  right: 60px;
+  color: #e2cc00;
+  font-size: 1.6rem;
+}
+
+.titulo-historia {
+  position: absolute;
+  top: 120px;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  right: 300px;
+  padding-bottom: 30px;
+}
+
+.section-historia {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-end;
+  gap: 60px;
+}
+
+.quadro {
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 30px;
+  background: #000;
+  height: 100px;
+  width: 100%;
+  color: #e2cc00;
+}
+
+.titulo-back {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.biografia {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titulo-mobile{
+  display: none;
+}
+
+.bio {
+  color: #777777;
+  font-size: 1.3rem;
+}
+
+.footer-bg {
+  background: #000;
+}
+
+.titulo-footer {
+  color: #ffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .titulo-introducao {
+    font-size: 1.8rem;
+  }
+
+  .section-arte {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo-arte {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .historia {
+    padding: 0 20px;
+  }
+
+  .historia:before {
+    display: none;
+  }
+
+  .titulo-historia {
+    display: none;
+  }
+
+  .section-historia {
+    grid-template-columns: 1fr;
+  }
+
+  .titulo-mobile{
+    display: block;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .bio {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .titulo-footer{
+    font-size: 1rem;
+  }
+}
